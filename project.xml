@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
+	<meta title="welcome to fluffhaus" package="com.koko.fox" version="1.0.0" company="YourCompany" />
+	
+	<!-- output -->
+	<app main="Main" file="fox" path="bin" />
+	
+	<window background="#ffffff" fps="60" />
+	<window width="800" height="480" unless="mobile" />
+	<window allow-high-dpi="true" />
+	<window orientation="landscape" vsync="false" antialiasing="1" />
+	
+	<!-- classpath, haxe libs -->
+	<source path="src" />
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	
+	<!-- assets -->
+	<assets path="assets" rename="assets" />
+	
+	<!-- optimize output -->
+	<haxeflag name="-dce full" />
+</project>
